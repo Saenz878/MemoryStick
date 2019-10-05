@@ -9,8 +9,8 @@ const getEstadoInicial = () => {
   return {
     baraja,
     parejaSeleccionada: [],
-    estaComparando: false,
-    numeroDeIntentos: 0    
+    estaComparando: false
+     
   };
 }
 
@@ -24,7 +24,6 @@ class App extends Component {
     return (
       <div className="App">
         <Header 
-          numeroDeIntentos={this.state.numeroDeIntentos}
           resetearPartida={() => this.resetearPartida()}
         />
         <Tablero 
@@ -76,17 +75,18 @@ class App extends Component {
       this.setState({
         parejaSeleccionada: [],
         baraja,
-        estaComparando: false,
-        numeroDeIntentos: this.state.numeroDeIntentos + 1
+        estaComparando: false
+       
       })
     }, 1000)
   }
 
   verificarSiHayGanador(baraja) {
+  // baraja.forEach ((carta)=> carta.fueAdivinada = true );
     if (
       baraja.filter((carta) => !carta.fueAdivinada).length === 0
     ) {
-      alert(`Ganaste en ${this.state.numeroDeIntentos} intentos!`);
+      alert(`GANASTES MUY BUENA MEMORIA VALOR DEL JUEGO Q.1.00!`);
     }
   }
 

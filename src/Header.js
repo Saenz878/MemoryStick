@@ -1,19 +1,30 @@
 import React, { Component } from 'react';
+import {NavLink} from 'react-router-dom'
 import './Header.css';
 
+
+
+
+
 export default class Header extends Component {
+
+  
   render() {
+
     return (
       <header> 
-        <div className="titulo">React-Memoria</div>
+        <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+
+   
+        <div  className="titulo">BIENVENIDO AL JUEGO DE MEMORIA !!</div>
           <div>
-            <button className="boton-reiniciar" onClick={this.props.resetearPartida}>
+            <button className="botton" onClick={this.props.resetearPartida}>
               Reiniciar
             </button>
+
         </div>
-        <div className="titulo">
-          Intentos: {this.props.numeroDeIntentos}
-        </div>
+        </nav>
+        
       </header>
     );
   }
