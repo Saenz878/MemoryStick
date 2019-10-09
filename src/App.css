@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color:red;
 }
 
 div:focus {
@@ -26,19 +26,4 @@ div:focus {
 
 .App-link {
   color: #09d3ac;
-}
-.titulo{
-  
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: left;
-  font-size: calc(10px + 2vmin);
-  color:greenyellow;
-
-
-}
-.botton{
-  color:red;
-
 }

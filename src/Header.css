@@ -7,14 +7,21 @@ header {
   align-content: center;
 }
 
-.titulo {
-  font-size: 25px;
-  padding: 10px;
-  color: #fff;
-}
+.titulo{
+  
+  text-align: right;
+  font-size: calc(20px + 2vmin);
+  color: red;
 
-.boton-reiniciar {
+
+}
+.botton {
   position: absolute;
-  left: 12px;
+  Right: 25px;
   top: 58px;
+  color:white;
+  background-color:red;
+  font-size: calc(10px + 4vmin);
+
+  min-height: 8vh;  
 }

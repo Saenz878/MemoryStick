@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {NavLink} from 'react-router-dom'
 import './Header.css';
 
 
@@ -16,7 +15,7 @@ export default class Header extends Component {
         <nav className="navbar navbar-expand-md navbar-dark bg-dark">
 
    
-        <div  className="titulo">BIENVENIDO AL JUEGO DE MEMORIA !!</div>
+        <div  className="titulo">BIENVENIDO AL JUEGO DE MEMORIA !! </div>
           <div>
             <button className="botton" onClick={this.props.resetearPartida}>
               Reiniciar
