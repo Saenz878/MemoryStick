@@ -1,7 +1,7 @@
 import shuffle from 'lodash.shuffle';
 import FontAwesomeClasses from './fontAwesomeClasses';
 
-const NUMERO_DE_CARTAS = 20;
+var NUMERO_DE_CARTAS = 20; 
 
 export default () =>  {
   console.log(FontAwesomeClasses);

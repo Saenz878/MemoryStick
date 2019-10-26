@@ -5,12 +5,13 @@ import './App.css';
 import construirBaraja from './utils/construirBaraja';
 
 const getEstadoInicial = () => {
+  
   const baraja = construirBaraja();
   return {
     baraja,
     parejaSeleccionada: [],
     estaComparando: false
-     
+  
   };
 }
 
@@ -25,6 +26,7 @@ class App extends Component {
       <div className="App">
         <Header 
           resetearPartida={() => this.resetearPartida()}
+          
         />
         <Tablero 
           baraja={this.state.baraja}
@@ -86,7 +88,7 @@ class App extends Component {
     if (
       baraja.filter((carta) => !carta.fueAdivinada).length === 0
     ) {
-      alert(`GANASTES MUY BUENA MEMORIA VALOR DEL JUEGO Q.1.00!`);
+      alert(`GANASTES MUY BUENA MEMORIA EXCELENTE!`);
     }
   }
 
@@ -95,6 +97,10 @@ class App extends Component {
       getEstadoInicial()
     );
   }
+
+ 
+ 
+ 
 }
 
 export default App;

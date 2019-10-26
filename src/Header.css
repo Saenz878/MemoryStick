@@ -21,7 +21,29 @@ header {
   top: 58px;
   color:white;
   background-color:red;
-  font-size: calc(10px + 4vmin);
+  font-size: 16 px;
+
+  min-height: 8vh;  
+}
+
+.input-valor {
+  position: absolute;
+  Right: 25px;
+  top: 150px;
+  color:white;
+  background-color:red;
+  font-size: 16px;
+
+  min-height: 8vh;  
+}
+.input-cont {
+  position: absolute;
+  Right: 105px;
+  top: 50px;
+  color:black;
+  background-color:white;
+  font-size: 10pt;
+  height: 2px;
 
   min-height: 8vh;  
 }
