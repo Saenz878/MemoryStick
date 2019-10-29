@@ -5,15 +5,17 @@ import './Header.css';
 
 
 export default class Header extends Component {
-  constructor(){
-    super();
+
+ 
+  constructor(props){
+    super(props);
     this.state={
-      Pareja: ''
+      Pareja:''
     };
   }
   
   render() {
-    const { Pareja } = this.state;
+    
     return (
       <header> 
         <nav className="navbar navbar-expand-md navbar-dark bg-dark">
